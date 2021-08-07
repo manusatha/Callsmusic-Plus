@@ -27,7 +27,7 @@ from config import BOT_USERNAME, BOT_OWNER, UPSTREAM_REPO, U_BRANCH, HEROKU_URL,
 
 
 # Stats Of Your Bot
-@Client.on_message(filters.command("stats") & filters.user(BOT_OWNER))
+@Client.on_message(filters.command("mstats") & filters.user(BOT_OWNER))
 async def botstats(_, message: Message):
     total, used, free = shutil.disk_usage(".")
     total = humanbytes(total)
@@ -76,7 +76,7 @@ async def chatcast(_, message: Message):
 
 
 # Ban User
-@Client.on_message(filters.private & filters.command("ban") & filters.user(BOT_OWNER))
+@Client.on_message(filters.private & filters.command("mban") & filters.user(BOT_OWNER))
 async def ban(c: Client, m: Message):
     if len(m.command) == 1:
         await m.reply_text(
@@ -92,7 +92,7 @@ async def ban(c: Client, m: Message):
         try:
             await c.send_message(
                 user_id,
-                f"Lmao You are **Banned 😂!** \n\nReason: `{ban_reason}` \nDuration: `{ban_duration}` day(s). \n\n**Message From The Owner! Ask in **@Nexa_bots** if you think this was an mistake."
+                f"Lmao You are **Banned 😂!** \n\nReason: `{ban_reason}` \nDuration: `{ban_duration}` day(s). \n\n**Message From The Owner! Ask in **@countdraculasupport** if you think this was an mistake."
             )
             ban_log_text += '\n\nSuccessfully Notified About This Ban to that **Dumb User** 😅'
         except:
@@ -113,7 +113,7 @@ async def ban(c: Client, m: Message):
 
 
 # Unban User
-@Client.on_message(filters.private & filters.command("unban") & filters.user(BOT_OWNER))
+@Client.on_message(filters.private & filters.command("munban") & filters.user(BOT_OWNER))
 async def unban(c: Client, m: Message):
     if len(m.command) == 1:
         await m.reply_text(
