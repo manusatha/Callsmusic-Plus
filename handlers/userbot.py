@@ -64,7 +64,7 @@ async def ubkickme(_, message: Message):
 @NEXAUB.on_message(filters.command("alive", [".", "/"]) & filters.me & ~filters.edited)
 async def ubalive(_, message: Message):
   alive_msg = await message.edit_text("`Processing...`")
-  alive_pic = "cache/NexaUB.jpg"
+  alive_pic = "cache/3282459.jpg"
   await message.reply_photo(alive_pic, caption=f"**🌀 Nexa Music Userbot is Alive 🌀** \n\n**🤖 Version** \n ↳**Bot Version:** `{cp_version}` \n ↳**Userbot Version:** `{nexaub_version}` \n\n**🐬 Info**\n ↳**Music Bot:** @{BOT_USERNAME} \n ↳**Owner:** [Click Here](tg://user?id={BOT_OWNER})")
   await alive_msg.delete()
 
@@ -87,7 +87,7 @@ async def getlogs(client: NEXAUB, message: Message, app_):
       return # Next level logic lol
     logmsg = await message.edit_text("`PM Message Logs Module is Starting Now...`")
     await asyncio.sleep(2) # Lmao
-    chat_pic = "cache/NexaUB.jpg"
+    chat_pic = "cache/3282459.jpg"
     try:
       await logmsg.edit("`Creating Private Group Now...`!")
       pmchat = await NEXAUB.create_group(f"Nexa Userbot's PM Logs", BOT_OWNER)
