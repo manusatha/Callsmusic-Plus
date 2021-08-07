@@ -14,10 +14,10 @@ async def _(bot: Client, cmd: Message):
     await handle_user_status(bot, cmd)
 
 
-@Client.on_message(command(["start", f"start@{BOT_USERNAME}"]))
+@Client.on_message(command(["mstart", f"start@{BOT_USERNAME}"]))
 async def start(_, message: Message):
     usr_cmd = message.text.split("_")[-1]
-    if usr_cmd == "/start":
+    if usr_cmd == "/mstart":
         chat_id = message.chat.id
         if not await db.is_user_exist(chat_id):
             await db.add_user(chat_id)
@@ -29,7 +29,7 @@ async def start(_, message: Message):
     await message.reply_text(
         f"""<b>Hi {message.from_user.mention} 😉️!</b>
 
-I'm The Nexa Music Bot! A Powerful Bot to Play Music in Your Group Voice Chat 😇!
+I'm Count Dracula Music Bot! A Powerful Bot to Play Music in Your Group Voice Chat 😇!
 
 Also I have more features! Please hit on **/help** to see them 😘!
 
@@ -46,11 +46,6 @@ Made with ❤️ **@{UPDATES_CHANNEL}**""",
                         "👮‍♂️ Help Menu 👮‍♂️", callback_data="cbhelpmenu"
                     )
                 ],
-                
-     
-    
-
-
                 [
                     InlineKeyboardButton(
                         "🔰️ My Update Channel 🔰️", url=f"https://t.me/{UPDATES_CHANNEL}"
@@ -66,10 +61,10 @@ Made with ❤️ **@{UPDATES_CHANNEL}**""",
 
 # Help Menu
 
-@Client.on_message(command(["help", f"help@{BOT_USERNAME}"]))
+@Client.on_message(command(["mhelp", f"help@{BOT_USERNAME}"]))
 async def help(_, message: Message):
     usr_cmd = message.text.split("_")[-1]
-    if usr_cmd == "/help":
+    if usr_cmd == "/mhelp":
         chat_id = message.chat.id
         if not await db.is_user_exist(chat_id):
             await db.add_user(chat_id)
@@ -209,10 +204,10 @@ Enjoy 😌️❤️!""",
     )
 
     
-@Client.on_message(command(["search", f"search@{BOT_USERNAME}"]))
+@Client.on_message(command(["msearch", f"search@{BOT_USERNAME}"]))
 async def search(_, message: Message):
     usr_cmd = message.text.split("_")[-1]
-    if usr_cmd == "/search":
+    if usr_cmd == "/msearch":
         chat_id = message.chat.id
         if not await db.is_user_exist(chat_id):
             await db.add_user(chat_id)
