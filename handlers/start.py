@@ -46,17 +46,17 @@ Made with ❤️ **@{UPDATES_CHANNEL}**""",
                         "👮‍♂️ Help Menu 👮‍♂️", callback_data="cbhelpmenu"
                     )
                 ],
-                [
-                    InlineKeyboardButton(
-                        "📦 Source Code 📦", url="https://github.com/Itz-fork/Callsmusic-Plus"
-                    )
-                ],
+                
+     
+    
+
+
                 [
                     InlineKeyboardButton(
                         "🔰️ My Update Channel 🔰️", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                     InlineKeyboardButton(
-                        "⚜️ Support Group ⚜️", url="https://t.me/Nexa_bots"
+                        "⚜️ Support Group ⚜️", url="https://t.me/countdraculasupport"
                     )
                 ]
             ]
@@ -155,7 +155,7 @@ Made with ❤️ by **@{UPDATES_CHANNEL}**""",
                 ],
                 [
                     InlineKeyboardButton(
-                        "⚜️ Support Group ⚜️", url="https://t.me/Nexa_bots"
+                        "⚜️ Support Group ⚜️", url="https://t.me/countdraculasupport"
                     )
                 ]
             ]
