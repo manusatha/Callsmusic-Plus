@@ -16,7 +16,7 @@ def is_that_owner(func):
     
     return ownermelol
 
-OWNER_TEXT = "**Hello My Master 😇!** Please select option from below buttons \n\n ~ @NexaBotsUpdates"
+OWNER_TEXT = "**Hello My Master 😇!** Please select option from below buttons \n\n ~ @countdraculasupport"
 
 OWNER_HELPCB=InlineKeyboardMarkup(
             [
@@ -81,14 +81,14 @@ async def cbbans(_, query: CallbackQuery):
 **Feature:** Ban Users From Using This Bot!
 
 **Usage:**
-    - Send User ID of that user, Ban Duration and Ban Reason with `/ban` command.
+    - Send User ID of that user, Ban Duration and Ban Reason with `/mban` command.
 
 
-**Example:** `/ban 1234567891 2 Test`
+**Example:** `/mban 1234567891 2 Test`
 
  - This will ban user with \nUser ID: `1234567891` \nFor: `2 Days` \nReason will be: `Test`
 
-Made with ❤️ by **@NexaBotsUpdates**""",
+Made with ❤️ by **@countdraculasupport**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -111,10 +111,10 @@ async def cbunbans(_, query: CallbackQuery):
 **Feature:** Unban Banned Users!
 
 **Usage:**
-    - Send User ID of that user with `/unban` command.
+    - Send User ID of that user with `/munban` command.
 
 
-**Example:** `/ban 1234567891`
+**Example:** `/munban 1234567891`
 
  - This will unban user with User ID: `1234567891`
 
@@ -140,10 +140,10 @@ async def cbuserstats(_, query: CallbackQuery):
 **Feature:** See How Many Users are using this bot!
 
 **Usage:**
-    - Send `/stats` command in Bot PM
+    - Send `/mstats` command in Bot PM
 
 
-Made with ❤️ by **@NexaBotsUpdates**""",
+Made with ❤️ by **@countdraculasupport**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -175,7 +175,7 @@ async def cbbroadcast(_, query: CallbackQuery):
      - Reply to a Text message with `/chatcast` command to Broadcast it using Streamer Account as a copy of that Message.
 
 
-Made with ❤️ by **@NexaBotsUpdates**""",
+Made with ❤️ by **@countdraculasupport**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -222,7 +222,7 @@ async def cbherokufuncs(_, query: CallbackQuery):
        This will delete variable named  `THUMB_URL`
 
 
-Made with ❤️ by **@NexaBotsUpdates**""",
+Made with ❤️ by **@countdraculasupport**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
